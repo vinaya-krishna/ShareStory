@@ -1,0 +1,72 @@
+$bg-color: #333;
+$font-color: #fff;
+$primary-color:#8E24AA;
+$dark-overlay: rgba(186,104,200,0.1);
+$font-size : 30px;
+
+body {
+    background: $bg-color;
+    color: $font-color;
+}
+
+.navbar {
+    border-bottom: $primary-color 3px solid;
+    opacity: 0.8
+}
+
+.bg-custom {
+    background: $primary-color;
+    color: $font-color;
+}
+
+#home-head-section{
+    background: url("../img/home.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+
+    .dark-overlay {
+        background-color: $dark-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 700px;
+    }
+
+    .home-inner {
+        padding-top: 100px;
+    }
+    .card-form {
+        opacity: 0.9;
+    }
+
+    .fa {
+        color: $primary-color;
+        background: #fff;
+        border-radius: 5px;
+        font-size: $font-size;
+        padding: 4px;
+
+    }
+}
+
+#explore-section,#share-section {
+    .fa {
+        color: $font-color;
+        background-color: $bg-color;
+        border-radius: 5px;
+        font-size: $font-size;
+        padding: 4px;
+
+    }
+}
+#create-section {
+    .fa {
+        color: $primary-color;
+        background: #fff;
+        border-radius: 5px;
+        font-size: $font-size;
+        padding: 4px;
+    }
+}
